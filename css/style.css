@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ibg img {
+  width: 100%;
+  height: 100%;
+}
+
+.foot {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 30px 0px;
+  background-color: #202020;
+  color: #e7e7e7;
+}
+.foot__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot__title {
+  margin: 0px 0px 10px 0px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgb(2, 2, 2);
+  text-align: center;
+}
+.foot__link {
+  display: flex;
+}
+@media (max-width: 490px) {
+  .foot__link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.foot__link a {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+@media (max-width: 490px) {
+  .foot__link a {
+    margin: 5px 0px;
+  }
+}
+.foot__link__image {
+  width: 35px;
+  height: 30px;
+  padding: 0 5px 0 0;
+}
+.foot__link__image img {
+  width: 100%;
+}
+.foot__link__text {
+  font-size: 12px;
+  color: #e7e7e7;
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: "ocra";
+  src: url(../fonts/OCRA.ttf);
+}
+@font-face {
+  font-family: "gothic";
+  src: url(../fonts/centurygothic.ttf);
+}
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.fullscreen {
+  background: url(../img/sur.jpg);
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fullscreen__body {
+  background: url(../img/mali.jpg);
+  background-size: cover;
+  background-position: 5px -13px;
+  margin: auto;
+  border-radius: 25px;
+  width: 315px;
+  height: 184px;
+  box-shadow: 0px 0px 2px 2px black;
+  -webkit-animation: move 1s linear infinite alternate;
+          animation: move 1s linear infinite alternate;
+}
+@-webkit-keyframes move {
+  50% {
+    box-shadow: 0px 0px 4px 4px rgb(150, 149, 149);
+  }
+  100% {
+    box-shadow: 0px 0px 7px 7px rgb(248, 248, 248);
+  }
+}
+@keyframes move {
+  50% {
+    box-shadow: 0px 0px 4px 4px rgb(150, 149, 149);
+  }
+  100% {
+    box-shadow: 0px 0px 7px 7px rgb(248, 248, 248);
+  }
+}
+.fullscreen .wallet {
+  height: 100%;
+  width: 100%;
+}
+.fullscreen .wallet__container {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 80px 0 0 0;
+}
+.fullscreen .wallet__row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fullscreen .wallet__number {
+  font-family: "ocra";
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: gold;
+}
+.fullscreen .wallet__namenlogo {
+  display: flex;
+  justify-content: space-between;
+}
+.fullscreen .wallet__name {
+  font-family: "gothic";
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.fullscreen .wallet__logo {
+  width: 45px;
+  height: 30px;
+}
+.fullscreen .wallet__logo img {
+  width: 100%;
+}
