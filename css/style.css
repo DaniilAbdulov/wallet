@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .fullscreen__body {
   background: url(../img/mali.jpg);
   background-size: cover;
-  background-position: 5px -13px;
+  background-position: px -13px;
   margin: auto;
   border-radius: 25px;
   width: 315px;
@@ -203,13 +203,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fullscreen .wallet__number {
   font-family: "ocra";
-  font-size: 20px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 2px;
-  color: gold;
+  color: rgb(201, 199, 192);
 }
 .fullscreen .wallet__namenlogo {
   display: flex;
@@ -220,6 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: rgb(90, 90, 89);
 }
 .fullscreen .wallet__logo {
   width: 45px;
