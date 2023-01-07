@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .fullscreen__body {
   background: url(../img/mali.jpg);
   background-size: cover;
-  background-position: px -13px;
+  background-position: 0px -13px;
   margin: auto;
   border-radius: 25px;
   width: 315px;
